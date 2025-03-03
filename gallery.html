@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nutritional Website: Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Nutritional Website</h1>
+
+        <div id="social">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.jpg" alt="facebook">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/x.jpg" alt="x/twitter">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin.jpg" alt="linkedin">
+            </a>
+        </div>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eating habits.html">Healthy Eating</a></li>
+                <li><a href="sleeping habits.html">Sleeping Habits</a></li>
+                <li><a href="exercise.html">Exercise</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="title">
+                <h2>Gallery Page for Nutrition</h2>
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/Picture1.png" style="width:75%">
+                  <div class="text">Welcome to our gallery where healthy living comes to life! Browse through inspiring moments of young people making it positive choices- whether its preparing nutrition's meals, staying active and fun workouts or finding time to relax a recharge. These snapshots showcase the journey towards a balanced and healthier lifestyle. Let these images motivate you to take small steps towards better well being. Every choice counts, and you journey starts today. This image highlights the key to a healthy lifestyle for professionals. The word “HEALTHY” is at the centre, surrounded by icons and keywords related to wellness. It emphasizes sleep, exercise, sports, and weight management, represented by symbols like a bed, running figure, and weighing scale. Diet and nutrition are shown through icons of an apple, fish, and milk, promoting healthy eating habits. Balance and time management are also depicted, suggesting that a well-structured routine is essential. The phrase “Key to Healthy Lifestyle of Professionals” reinforces the message that professionals should prioritize their health through proper habits.</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/world.webp" style="width:50%">
+                  <div class="text">The image is a world map showing the share of the population that was undernourished in 2020, based on data from the Food and Agriculture Organization (FAO). The map uses a color gradient to indicate the percentage of undernourished individuals in each country, with darker shades of red representing higher levels of undernourishment (above 40%) and lighter shades indicating lower percentages (around 5%). It highlights severe food insecurity in parts of Africa, South Asia, and Latin America, while many developed regions such as North America and Europe either have low levels of undernourishment or lack available data. The map underscores global disparities in food security and nutrition</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/motivation .png" style="width:50%">
+                  <div class="text">“Be stronger than your excuses” is a motivational phrase that encourages individuals to overcome the barriers and justifications they often create for not pursuing their goals. It reminds us that we can choose discipline and perseverance over the comfort of excuses. Essentially, it’s a call to action to prioritize personal strength and determination, rather than letting reasons or rationalizations hold us back.</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+
+
+        <div id="footer">
+            <a href="index.html">Home</a>  |  <a href="eating habits.html">Healthy Eating</a>   |   <a href="sleeping habits.html">Sleeping Habits</a>  |  <a href="exercise.html">Exercise</a>  |  <a href="gallery.html">Gallery</a>   |  <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
