@@ -108,7 +108,7 @@ a.active
 
 #title h2
 {
-    text-align: center;
+    text-align: centre;
     padding: 2px;
     margin: 0px;
 }
@@ -125,7 +125,7 @@ a.active
 
 #home_box
 {
-    width: 65%;
+    width: 100%;
     display: block;
     text-align: center;
     margin: auto;
@@ -134,14 +134,14 @@ a.active
 .pics
 {
     display: inline-block;
-    margin: 5px;
+    margin: 25px;
 }
 
 .pics img
 {
-    height: 177px;
-    width: 210px;
-    border-radius: 10px;
+    height: 350px;
+    width: 850px;
+    border-radius: 35px;
     border: 1px solid black;
 }
 
@@ -186,8 +186,8 @@ a.active
 
 .blocks img
 {
-    width: 300px;
-    height: 200px;
+    width: 450px;
+    height: 350px;
     border-radius: 10px;
 }
 
